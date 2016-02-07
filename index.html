@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<script src="rule.js"></script>
+		<script src="passwords.js"></script>
+		<script src="hashcatJS.js"></script>
+	</head>
+	<body>
+
+		<script>
+			var tryPassword = function(){
+				var usersPassword = document.getElementById("password").value;
+				var looking = document.getElementById("looking");
+				looking.innerHTML = "Searching for password...";
+				setTimeout(function(){
+					//tweak 1000 to get a larger dictionary, max size 9999 with default dictionary
+					if(checkThisPassword(usersPassword, 1000) == true){
+						looking.innerHTML = "Found this password!";
+						}else{
+						looking.innerHTML = "Did not find this password!";
+					}
+				},100)
+			}
+		</script>
+		<div id="looking"></div>
+		Password to check:
+		<input id="password" type="password" onkeydown = "if (event.keyCode == 13) tryPassword()">
+		<input type="submit" value="Check me!" onclick="tryPassword()">
+	</body>
+</html>
