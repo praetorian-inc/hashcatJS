@@ -3,6 +3,7 @@
 		<script src="rule.js"></script>
 		<script src="passwords.js"></script>
 		<script src="hashcatJS.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	</head>
 	<body>
 
@@ -10,20 +11,34 @@
 			var tryPassword = function(){
 				var usersPassword = document.getElementById("password").value;
 				var looking = document.getElementById("looking");
+				var inputPw = document.getElementById("input");
 				looking.innerHTML = "Searching for password...";
 				setTimeout(function(){
-					//tweak 1000 to get a larger dictionary, max size 9999 with default dictionary
-					if(checkThisPassword(usersPassword, 1000) == true){
+					//tweak 9999 to get a larger dictionary, max size 9999 with default dictionary
+					if(checkThisPassword(usersPassword, 9999) == true){
+						inputPw.className = "btn btn-danger";
+						looking.className = "bg-danger text-center";
 						looking.innerHTML = "Found this password!";
 						}else{
+						inputPw.className = "btn btn-success";
 						looking.innerHTML = "Did not find this password!";
 					}
 				},100)
 			}
 		</script>
-		<div id="looking"></div>
-		Password to check:
-		<input id="password" type="password" onkeydown = "if (event.keyCode == 13) tryPassword()">
-		<input type="submit" value="Check me!" onclick="tryPassword()">
-	</body>
+		<div class="row">
+  			<div class="col-xs-6 col-sm-4"></div>
+			<div class="col-xs-6 col-sm-4 text-center">
+				<h1 class="alert alert-success">Password registration dictionary and rule check:</h1>
+				</br>
+				<input id="password" autofocus placeholder= "Password to check" type="password" onkeydown = "if (event.keyCode == 13) tryPassword()">
+				<input id="input" type="submit" class="btn btn-info" value="Check me!" onclick="tryPassword()">
+				<h1 id="looking"></h1>
+				<h5 class="alert alert-info">In addition to passphrase length requirements, it is important to perform dictionary and rule checks against user passwords to help ensure users are selecting secure long passphrases. This is a client side library that validates these rules. All client side checks should always be accompanied by server side checks</h5>
+			</div>
+  <!-- Optional: clear the XS cols if their content doesn't match in height -->
+  			<div class="clearfix visible-xs-block"></div>
+  			<div class="col-xs-6 col-sm-4"></div>
+		</div>
+		</body>
 </html>
