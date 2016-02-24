@@ -37,5 +37,5 @@ More information on rules can be found [here](https://hashcat.net/wiki/doku.php?
 The dictionary must be of the following form
 
 ```javascript
-    var passwords = ["password", "123456", "12345678", "1234"
+    var passwords = ["password", "123456", "12345678", "1234"]
 ```
