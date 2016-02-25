@@ -35,6 +35,13 @@ The dictionary must be of the following form
     var passwords = ["password", "123456", "12345678", "1234"]
 ```
 
+##Instalation
+
+You can install hashcatJS with bower
+
+```bash
+bower install hashcatJS
+```
 
 ##For brute forcing login pages
 With slight modification HashcatJS can also be used to brute force a login page. Given a page with no account lockout, HashcatJS can be used to send requests to the server for common passwords and rule variations of those common passwords. Future releases will make this functionality more accessible. Pull requests welcome.
