@@ -49,5 +49,5 @@ With slight modification HashcatJS can also be used to brute force a login page.
 
 
 
-Using hashcatJS in at interesting way? Feel frer to tweet it @praetorianlabs(https://twitter.com/praetorianlabs) 
+Using hashcatJS in at interesting way? Feel free to tweet us [@praetorianlabs](https://twitter.com/praetorianlabs) 
 
