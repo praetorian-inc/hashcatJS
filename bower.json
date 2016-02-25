@@ -1,0 +1,23 @@
+{
+  "name": "hashcatJS",
+  "description": "An implementation of the hashcat rule set in javascript",
+  "main": [
+    "rule.js",
+    "passwords.js",
+    "hashcatJS.js"
+  ],
+  "keywords": [
+    "motion",
+    "physics",
+    "particles"
+  ],
+  "authors": [
+    "Dylan Ayrey <dxa4481@rit.edu>"
+  ],
+  "license": "GPLv2",
+  "repository": {
+	  "type": "git",
+	  "url": "git://github.com/dxa4481/hashcatJS.git"
+  },
+  "private": false
+}
