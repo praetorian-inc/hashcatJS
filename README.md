@@ -35,7 +35,7 @@ The dictionary must be of the following form
     var passwords = ["password", "123456", "12345678", "1234"]
 ```
 
-##Instalation
+##Installation
 
 You can install hashcatJS with bower
 
