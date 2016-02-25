@@ -46,5 +46,8 @@ bower install hashcatJS
 ##For brute forcing login pages
 With slight modification HashcatJS can also be used to brute force a login page. Given a page with no account lockout, HashcatJS can be used to send requests to the server for common passwords and rule variations of those common passwords. Future releases will make this functionality more accessible. Pull requests welcome.
 
-Using hashcatJS in QN interesting way? You can tweet it @praetorianlabs 
+
+
+
+Using hashcatJS in at interesting way? Feel frer to tweet it @praetorianlabs(https://twitter.com/praetorianlabs) 
 
