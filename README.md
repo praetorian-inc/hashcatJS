@@ -3,7 +3,7 @@ An implementation of the hashcat rules engine in javascript
 
 #Author
 [Dylan Ayrey](https://github.com/dxa4481)
-[Hob0 rule set](http://github.com/praetorian-inc/Hob0Rules)
+
 
 ##For registration pages
 HashcatJS can be used for client side verification of password registrations. It has the ability to spot if a user's password falls into the top 10,000 picked passwords, and it also has the ability to see if those passwords fall into rule sets. More information on rule based password cracking can be found here: [Statistics Will Crack Your Password Mask Structure](https://www.praetorian.com/blog/statistics-will-crack-your-password-mask-structure)
@@ -31,6 +31,8 @@ The rule sets must be of the following form
 
 
 More information on rules can be found [here](https://hashcat.net/wiki/doku.php?id=rule_based_attack)
+
+The rule set used by default is the [Hob0 rule set](http://github.com/praetorian-inc/Hob0Rules)
 
 ###Dictionary
 The dictionary must be of the following form
