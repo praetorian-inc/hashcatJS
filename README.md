@@ -1,4 +1,7 @@
+![hashcatJS logo](https://i.imgur.com/deIT2gu.png)
 # hashcatJS
+
+
 An implementation of the hashcat rules engine in javascript
 
 #Author
