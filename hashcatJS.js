@@ -147,7 +147,13 @@ var rulesList = {
 			  retPassword += password[i].repeat(2);
 		}
 		return [rules.slice(1), retPassword]
-	}
+	},
+	"n": function(rules, password) {
+		let addition = rules[1] != 'y' ? rules[1] : new Date().getFullYear();
+		if(password.includes('@')) password += addition
+		else password += `@${addition}`
+    return [rules.slice(2), password]
+  }
 }
 
 
